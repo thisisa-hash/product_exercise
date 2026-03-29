@@ -1,0 +1,1210 @@
+Take-Home Assignment
+Product Manager
+Candidate: Guilherme Costa
+Date: March 2026
+About the Candidate
+ LinkedIn profile
+ Resume
+ Contact:
+Mobile: +55 11 998990624
+Email: guibcs@gmail.com
+
+Novibet THA – Product Manager
+
+Guilherme Costa – March 2026
+
+______________________________________________________________________
+
+Assignment Tasks
+1. Google Analytics
+From a user experience point of view, we want to evaluate Offers Page
+This product is accessible mainly through the Gift Icon, but not limited through that.
+There are various entry points where you land on the Offers Homepage.
+This product serves as a centralized hub for offers, helping players easily discover
+and navigate all available promotions — effectively acting as a one-stop shop for
+rewards and incentives.
+Google Analytics can give us a hint or two with regards to Offers Page performance.
+● Define what kind of events, kpis or funnels we can monitor, so we can extract
+valuable insights for the Product Team.
+● Provide some reports, for illustrative reasons. (maybe using some random
+numbers)
+● What success looks like for this product? Can you explain?
+● Are there additional KPIs that, combined with your suggestions above,enhance
+our decision making
+strategy?
+Please check the following:
+The relevant google sheet file (Offers Page for THA) with two tabs; Screenshots Desktop
+and Apps in
+an illustrative way depicted how the player can browse through Offers Page and
+eventually choose a
+game or an offer.
+For extra tips, you can visit the Novibet site, based on your residency.
+(for BR, https://www.novibet.bet.br/cassino)
+
+Novibet THA – Product Manager
+
+Guilherme Costa – March 2026
+
+______________________________________________________________________
+
+1.1 Product Overview (key ﬁndings and analytical framing)
+Since the market was regulated, Brazil has imposed a number of restrictions on the use
+of bonuses and promotions in the iGaming sector. This limits the creation of more
+appealing incentives and CTAs. The analysis will therefore take into account both the
+screenshots provided and an overview of the local website, which is better suited to legal
+and compliance requirements.
+In both cases (screenshots and the Brazilian website), users access the Offer Page
+primarily via a Gift Icon in the navigation bar (both desktop and mobile app), but also
+through the Sportsbook Home Page and direct inner page links. This multi-entry
+architecture means the measurement framework must capture both traffic source quality
+and player journey depth from first discovery through to downstream betting activity.
+The page serves two distinct player intents: discovery (players browsing available
+promotions without a specific offer in mind); and intent (players returning to claim a
+specific offer they have already seen). These intents require different event tracking and
+should inform separate funnel analyses.
+The UX/UI structure is straightforward, based on an easily recognisable icon (the gift
+box). Offers can then be categorised (all, sports or casinos), which helps to segment the
+audience. In terms of structure, the main issues are the lack of a clear hierarchy (larger
+offers do not always appear at the top of the list) and the counters, which in some cases
+do not generate FOMO (the screenshot below shows offers with 496 and 1,747 days until
+expiry, which makes the measurement meaningless).
+
+The brand’s visual identity is reflected in the banners, and the colour scheme helps to
+make the page more appealing. I noticed the absence of CTAs or clickable buttons, such
+
+Novibet THA – Product Manager
+
+Guilherme Costa – March 2026
+
+______________________________________________________________________
+as those found on Betano’s Promotions Page (a market leader and benchmark in terms of
+bonuses and offers, which has a similar structure to the example provided, as can be seen
+below).
+
+1.2 What to measure and monitor (KPIs, events, funnels)
+Based on the proposed structure, the key KPIs to be monitored are:
+
+
+
+
+
+
+
+
+
+
+
+Website to Offer Page CVR (% of the total audience, broken down by desktop,
+mobile and app, who reach the Offer Page)
+Offer banner Click Rate
+Offer CTA Click Rate
+Offer to Register CVR
+Register to Deposit CVR
+Deposit to Bet CVR
+Exit Rate (churn / no action)
+Offer Expiration Rate
+Player performance (First deposit, GGR, NGR)
+Player LTV (average LTV x LTV from the Offer Page)
+
+Generally speaking, the main concerns regarding the Offer Page should be:
+
+
+
+
+
+
+Whether it attracts the attention of visitors already on the site
+Whether visitors who land on it click on the offers
+Whether those who click on the offers actually play
+Whether these players represent good value when compared to the company’s
+database
+Whether these high-value players have a good LTV
+
+Regarding Funnel Exploration, I would create a 5-step report on GA with stages
+sequential and closed (each action requires the completion of the prior action). The stages
+should be:
+
+Novibet THA – Product Manager
+
+Guilherme Costa – March 2026
+
+______________________________________________________________________
+Step (event)
+CVR
+Drop-off signal
+(hypotheses)
+1.
+Offer Page visit (offer_page_view)
+2.
+Offer banner click (offer_offer_click)
+~40%
+Low rate (copy,
+layout, content)
+3.
+CTA (new resource) engaged
+~25%
+Low rate (copy,
+(offer_cta_primary_click)
+content)
+4.
+Register completed (offer_opt_in)
+~10% Low rate (KYC, form
+page, tech)
+5.
+Downstream bet placed
+~20%
+Low rate (offer-bet
+(bet_placed_post_offer)
+mismatch, tech)
+Figures based on personal experience with performance-based operations / market
+averages (information gathered from discussions with other professionals in the sector)
+Based on this, a dashboard for monitoring this property might look like this:
+Website to Offer
+~8%
+Page view → offer
+page
+
+Offer banner CR
+~2%
+Offer page →
+banner clicked
+
+CTA CR
+~5%
+Offer page → CTA
+clicked
+
+Offer to Register
+CVR
+~20%
+Offer click →
+register
+
+Register to
+Deposit CVR
+~70%
+Register → deposit
+
+Deposit do Bet
+CVR
+~50%
+Deposit →
+successful bet
+
+Exit Rate
+
+Offer Expiration
+Rate
+<25%
+Opted-in offers
+unused at expiry
+
+~60%
+Offer Page sessions
+without CTA
+interaction
+
+First deposit (AV)
+GGR (AV)
+NGR (AV)
+LTV (AV)
+>50 BRL
+>60 BRL
+~60% GGR
+>60D
+Based on Novibet’s Based on Novibet’s Based on Novibet’s Based on Novibet’s
+average results
+average results
+average results
+average results
+from performance
+from performance
+from performance
+from performance
+campaigns
+campaigns
+campaigns
+campaigns
+Figures based on personal experience with performance-based operations / market
+averages (information gathered from discussions with other professionals in the sector)
+It is also important to follow the different results from each platform (desktop, mobile
+and app). The desktop experience displays significantly more offer detail per card (full
+descriptions, visual badges, clear CTAs) compared to the mobile app. This structural
+difference is expected to drive a measurable performance gap across devices. With that
+in mind, as the figures are fictitious, I have created a dashboard using AI (Claude) for
+reference and illustration purposes only:
+
+Novibet THA – Product Manager
+
+Guilherme Costa – March 2026
+
+______________________________________________________________________
+Metric
+Est. Share of Sessions
+Avg. Scroll Depth
+Offer Click Rate
+Opt-in Rate (register)
+Exit Rate (no action)
+
+Mobile App
+~50%
+~45%
+~35%
+~13%
+~66%
+
+Mobile Web
+~28%
+~52%
+~38%
+~15%
+~63%
+
+Desktop
+~22%
+~71%
+~50%
+~22%
+~50%
+
+1.3 What “success” looks like in this case
+Before regulation, the Brazilian iGaming market was built around bonuses and
+promotions, which proved to offer the best customer acquisition cost (CAC) in the sector.
+As there were no restrictions in place, many operators offered aggressive terms to attract
+new players, creating an environment where player retention was difficult (low lifetime
+value, LTV) and the average deposit amount was low (GGR dependent on the value of
+promotional offers).
+The upside of this trend is that Brazilian players are very receptive to promotions.
+Therefore, we can expect positive conversion rates from the offers page.
+On the other hand, it is important to note that players coming from offers pages are of
+lesser value to the operator than those from other sources. These are casual players who
+will subsequently require further retention efforts to keep them playing.
+Taking this information into account, along with data collected in recent years, the
+product’s success in this case could be assessed as follows:
+Short-Term (Weekly)
+ Offer Click Rate: 10% of page sessions across all devices
+ Opt-in Rate: 25% of clicks
+ Exit Rate (no action): below 60%
+Medium-Term (Monthly)
+ Offer-to-Bet Conversion Rate: 10% (all traffic sources combined)
+ Redemption-driven GGR: 12% of total platform GGR
+ CRM-driven sessions converting at ≥ 1.5× the organic entry rate (CRM traffic is
+higher-intent by definition)
+Long-Term (Quarterly)
+ Players engaging at least 2 distinct offers per month
+ Offer Expiry Rate below 25% (currently untracked; baseline required)
+ Bonus Cost Ratio (promotion spend / GGR attributed to offers): ≤ 25%
+
+1.4 Additional KPIs for enhanced decision-making
+
+
+
+
+Bonus cost ratio (BCR): Controls profitability
+Offer awareness rate: Measures discoverability beyond gift icon
+Multi-offer engagement: Shows product stickiness
+
+Novibet THA – Product Manager
+
+Guilherme Costa – March 2026
+
+______________________________________________________________________
+ GGR per offer: Enables comparison between the offers
+ CAC via offers: Acquisition efficiency
+
+Novibet THA – Product Manager
+
+Guilherme Costa – March 2026
+
+______________________________________________________________________
+
+2. Data Analysis & Product Insights
+Now, from a more product point of view, we want to evaluate how Sportsbook
+Missions, one of our most engaging mechanics, is performing.
+This product aims to motivate players to place a bet and they will get rewarded
+regardless if they win or lose.
+We bring 13-weeks data from Brazil.
+● Create some reports where you can demonstrate your analytical thinking.
+● How are Missions performing? Is there any pain point spotted from the data?
+● Provide additional KPIs that can be explored to enhance our decision making
+strategy.
+● What success looks like? Can you explain?
+● Can you provide any product improvement based on your data?
+● If you were responsible to consult the product team for next steps, what would you
+say?
+How would you respond if you were asked to drop the Missions product?
+Please check the following:
+The relevant google sheet file (Sportsbook Missions for TΗA) with 4 tabs. Definitions,
+Conversion, Customer Base, Category
+For extra tips, you can visit the Novibet site, based on your residency.
+(for BR, https://www.novibet.bet.br/apostas-esportivas)
+
+Novibet THA – Product Manager
+
+Guilherme Costa – March 2026
+
+______________________________________________________________________
+
+2.1 Data overview (built with AI)
+The dataset covers 13 weeks of Sportsbook Missions activity in Brazil (6 April 2025 – 29
+June 2025), spanning three full calendar months. Four data tabs were provided:
+Definitions, Conversion, Customer Base, and Category. All figures in this section are
+drawn directly from the provided data; no illustrative substitution has been applied.
+Numbers at a glance:
+Total Opt-ins
+
+Total Completions
+
+Overall Conv. Rate
+
+181,540
+13 weeks, all
+missions
+
+64,823
+13 weeks, all
+missions
+
+35.7%
+Completions / opt-ins
+
+Active Users/Week
+(AV)
+26,423
+Logged-in players
+
+Opt-in Rate (AV)
+
+Total Missions
+Offered
+99
+78 public · 21 private
+
+User Completion
+Missions/Week (AV)
+Rate
+16.2%
+46.0%
+7.6
+Opt-in users / active
+Completing users /
+Range: 5–14 per
+users
+opt-in users
+week
+Source: Sportsbook Missions for THA — Conversion and Customer Base tabs.
+
+Weekly Performance:
+Week
+
+Missions Pub/Priv
+
+Opt-ins
+
+Completions
+
+Conv.
+Active
+Opt-in
+Rate
+Users
+Rate
+Apr 06
+7
+6/1
+12,100
+4,321
+35.7%
+23,000
+15.9%
+Apr 13
+8
+7/1
+13,400
+4,810
+35.9%
+23,120
+16.0%
+Apr 20
+8
+7/1
+12,500
+4,610
+36.9%
+24,100
+15.1%
+Apr 27
+5
+5/0
+11,340
+3,610
+31.8%
+25,320
+15.4%
+May 04
+10
+7/3
+15,220
+6,540
+43.0%
+25,800
+15.9%
+May 11
+9
+6/3
+13,988
+5,621
+40.2%
+27,100
+15.9%
+May 18
+14
+9/5
+25,432
+9,765
+38.4%
+29,100
+15.3%
+May 25
+10
+6/4
+15,220
+6,921
+45.5%
+28,200
+16.3%
+Jun 01
+5
+5/0
+11,612
+3,100
+26.7%
+27,830
+16.7%
+Jun 08
+5
+5/0
+11,819
+3,283
+27.8%
+27,820
+16.5%
+Jun 15
+6
+5/1
+12,765
+3,923
+30.7%
+27,340
+16.9%
+Jun 22
+6
+5/1
+12,910
+4,100
+31.8%
+27,360
+17.0%
+Jun 29
+6
+5/1
+13,234
+4,219
+31.9%
+27,410
+17.3%
+Source: Sportsbook Missions for THA — Conversion and Customer Base tabs. Conv.
+Rate = Completions / Opt-ins.
+Monthly summary:
+Month
+
+Weeks
+
+Missions
+
+Opt-ins
+
+Completions
+
+Conv.
+Rate
+
+Active Users
+(AV)
+
+Novibet THA – Product Manager
+
+Guilherme Costa – March 2026
+
+______________________________________________________________________
+April
+4
+28
+49,340
+17,351
+35.2%
+23,885
+May
+4
+43
+69,860
+28,847
+41.3%
+27,550
+June
+5
+28
+62,340
+18,625
+29.9%
+27,552
+TOTAL /
+13
+99
+181,540
+64,823
+35.7%
+26,423
+AV
+
+2.2 What I gathered from the data
+The most significant finding in the dataset is the sharp deterioration in the completion
+rate (opt-in conversion) during June: from a May average of 41.8% to a June average of
+29.8%, a 12.0% retraction.
+As it went beyond the margin, the fluctuation in the opt-in conversion rate suggests a
+structural breakdown. Particularly as there was no player disengagement. The opt-in rate
+(opt-in users / active users) was actually rising throughout June, from 16.7% to 17.3%.
+Players continued to engage with Missions at increasing rates. They simply stopped
+completing them.
+So, looking at it more closely, May's peak performance (41.3% conv. rate) coincided with
+maximum mission diversity. Basketball accounted for 30% of missions and Mixed
+accounted for 33%. May 18, the single best week in the dataset (25,432 opt-ins; 9,765
+completions), had 14 missions of which only 3 (21%) were Football, with 5 Basketball
+and 6 Mixed.
+June's collapse maps precisely to the elimination of Basketball (0 missions) and Mixed (0
+missions), leaving Football and Tennis as the only categories. The implication is clear:
+players who opt into multi-sport or Basketball missions complete them at materially
+higher rates. Football-only periods suppress completion, likely because football match
+schedules are less frequent and outcomes harder to control for within a 7-day mission
+window.
+Month
+
+Football Missions
+
+April
+May
+June
+
+16 (57%)
+15 (35%)
+13 (46%)
+
+Basketball
+Missions
+9 (32%)
+13 (30%)
+0 (0%)
+
+Mixed Missions
+
+CVR (AV)
+
+0 (0%)
+14 (33%)
+0 (0%)
+
+35.2%
+41.3%
+29.9%
+
+The hypothesis that the chosen sports are a key factor in user behaviour and conversion
+rates is further supported by a specific week in April. During the period designated as 27
+April, the missions were also limited to football and tennis. The number of completions
+fell from 4,610 to 3,610 WOW, and the conversion rate dropped from 36.9% to 31.8%.
+On the other hand, it is important to note that football-related missions account for only
+44.4% of the total analysed for the period. Although the sport accounted for the largest
+share (Basketball, in second place, accounted for half the missions), the percentage is
+small in terms of efficiency. Although the most reliable estimates are outdated, it is safe
+to say that football accounts for more than 80% of the sports betting market in Brazil.
+There is therefore a discrepancy between the market potential and the volume of Football
+Missions.
+
+Novibet THA – Product Manager
+
+Guilherme Costa – March 2026
+
+______________________________________________________________________
+The completion rate also shows a worrying decline. The User Completion Rate
+(completing users / opt-in users) measures how many of the players who opted in actually
+completed at least one mission. The decline from 60.7% in April to 26% in the final week
+of June represents a 31% deterioration in user-level mission efficacy. This trend is not
+explained by category mix alone. It began during May, before the June category shift. It
+suggests a secondary issue, such as a possible mission fatigue or the level calibration drift
+(missions are becoming harder relative to player behaviour over time).
+
+User Copletion Rate
+70
+60
+50
+40
+30
+20
+10
+0
+
+Weekly variation
+
+In addition, a correlation can be observed between the number of missions and the total
+number of opt-ins. On 27 April and 1 June, when there were only five missions, the
+number of opt-ins stood at around 11,000 (11,340 and 11,612, respectively). In May, on
+the other hand, there were 14 missions and 25,432 opt-ins. Although this affects the
+average number of opt-ins per mission, the figures show that the ideal is to have around
+10–12 missions per week.
+And the final point to note is that weeks featuring only public missions performed less
+well in terms of conversion (32.4% vs 40.4% for weeks with private missions).
+In summary, therefore, it was possible to observe that:
+
+
+
+
+
+
+There was a drop in the completion rate from June onwards
+The sports chosen affect the completion rate (greater diversity = higher
+completion rate)
+Conversely, football is underutilised (44.4%, far below the share the sport
+represents in the Brazilian sports betting market)
+User Completion Rate dropped from 67% in April to 26% in May (Fewer people
+are completing missions, which suggests there is a problem with the missions
+themselves)
+More missions = more sign-ups. The figures show that, for a few weeks, the
+number of missions was lower than ideal (above 10)
+
+Novibet THA – Product Manager
+
+Guilherme Costa – March 2026
+
+______________________________________________________________________
+ All-public missions weeks underperformed on conversion (Weeks with 0 private
+missions average 32.4% CR vs 40.4% for weeks with private missions)
+
+2.3 Prioritisation of the ﬁndings
+Completion rate decline
+Category concentration
+User completion rate decline
+Football being underutilised
+Mission volume below optimal
+All-public missions weeks underperform
+on conversion
+
+CRITICAL
+CRITICAL
+HIGH
+HIGH
+MEDIUM
+MEDIUM
+
+2.4 What “success” looks like in this case
+In terms of the product, the data points to a clear path to success:
+
+
+
+
+Private sessions available in at least 75% of weeks
+Football featuring more prominently in the total number of sessions
+Greater variety of sports among the sessions on offer
+
+The main aim of the proposed changes is to halt the decline in the completion rate and
+the completion rate per user. Furthermore, the aim is to return to the peak levels of optins (25,432) and users (29,100) recorded on 18 May.
+
+2.5 Additional KPIs or decision-making
+The figures presented highlight other KPIs that can be monitored to gauge the actual
+impact of the campaigns on the brand strategy as a whole.
+It is possible, for example, to measure the average GGR per opt-in and the overall
+performance of players acquired through missions (primarily NGR and LTV).
+Another key aspect is retention. What percentage of people return organically for
+subsequent missions? What is the recirculation rate?
+It is also possible to look at strategic breakdowns (Which game type converts best? What
+is the actual impact of private missions on the conversion rate?).
+Finally, it is important to understand that missions are merely a gateway. So, what
+percentage of people leave this platform and continue betting? What is the performance
+of these players?
+
+2.6 Executive assessment
+The product generated 64,823 completions in 13 weeks from a base of 26,000 weekly
+active users. The opt-in rate of 16.2% is structurally stable even in the worst weeks. The
+
+Novibet THA – Product Manager
+
+Guilherme Costa – March 2026
+
+______________________________________________________________________
+critical insight from this data is that Missions does not have a product problem, but a
+content curation problem. June's collapse was caused by removing Basketball and Mixed
+missions, not by any fundamental product flaw. The correct recommendation is to fix the
+category mix, not drop the product. A controlled A/B experiment (Missions On vs. Off
+for matched cohorts over 6 weeks) would provide the causal evidence needed for any
+go/no-go decision.
+This analysis must also take into account the impact that gamification has on the profile
+of the website’s visitors. The mission format helps to make the entire site more appealing
+to a younger audience, who are likely to develop a longer-lasting and more profitable
+relationship with the brand.
+Looking at the results, I would invest in the following:
+
+
+
+
+
+Content adjustments (game modes, volume of missions, increased focus on
+football, increased focus on private missions)
+Product analysis (ongoing research into opt-in and conversion rates)
+Analysis of additional KPIs (assessment of the potential of players recruited
+through missions)
+Inclusion of other commercial opportunities (CTAs to other parts of the site, upsell
+opportunities and bonuses/cashback linked to mission results)
+
+Given that the campaigns attract more than 26,000 people a week and that this figure
+shows no signs of waning, it seems clear to me that this is a platform with the potential
+to drive repeat engagement and link up with the company’s other commercial
+opportunities.
+
+Novibet THA – Product Manager
+
+Guilherme Costa – March 2026
+
+______________________________________________________________________
+
+3. How to?
+In Novibet, we launched a Casino Loyalty program in January 2025.
+It is a way of rewarding our players, whenever they launch and play a game.
+There is no requirement for the player (like opt-in) - he/she instantly receives coins
+based on their activity.
+The player starts with 0 coins and there is no competition among the players.
+These coins can be automatically redeemed based on the below tables.
+The “Premium” is a one-off stage; the player receives rewards as soon as a milestone
+is reached.
+The “VIP” is a monthly recurring stage; the player receives rewards by the end of
+month, based on his/her highest milestone achieved during each month.
+The player will complete the “Premium” stage, before moving to the “VIP” stage.
+
+(there is no need to focus so much on the numerics)
+The Product Analytics team has been requested to assess if the Casino Loyalty
+program is successful or not, until now (End of August 2025).
+You are responsible to compile a concrete analysis depicting the as is performance
+of this casino loyalty.
+● How would you frame the analysis?
+● Explain the perimeter of your analysis e.g. time period, customer segment, etc
+● Feel free to provide any visuals, if necessary.
+For extra tips, you can visit the Novibet site, based on your residency.
+(for BR, https://www.novibet.bet.br/cassino/loyalty-program)
+
+Novibet THA – Product Manager
+
+Guilherme Costa – March 2026
+
+______________________________________________________________________
+Novibet Casino Loyalty Programme, launched January 2025, rewards players
+automatically for game activity (no opt-in required). Players accumulate coins from
+launch, progressing through a one-off Premium stage (5 milestones) before entering the
+monthly-recurring VIP stage (7 milestones). Rewards are cash-denominated and autoredeemed at each milestone. The assessment scope covers January 2025 through end of
+August 2025 (8 months).
+Note: No operational data for this product was provided in the assignment. The
+framework below describes how the analysis should be structured and what data would
+be required.
+
+Novibet THA – Product Manager
+
+Guilherme Costa – March 2026
+
+______________________________________________________________________
+
+3.1 Conceptual analysis
+This is a less practical aspect of the assessment, but it is important for establishing the
+product’s foundation and its significance beyond tangible factors.
+Brazil has 28 million active players, with ~37 billion BRL in GGR (source: SIGAP /
+SPA). Of this total, 68.3% are men and 51.3% are aged between 18 and 40. The SouthEast region accounts for almost half of all players (São Paulo alone accounts for 23.4%).
+Therefore, given that the industry’s primary target audience is men aged between 18 and
+40 living in the South-East (primarily in São Paulo), the Casino Loyalty Programme
+should take the following into account:
+
+
+
+
+
+
+
+
+
+
+Gamification matters: This audience profile is closely linked to gaming culture.
+According to the Game Brasil Survey, conducted in 2022, 74.5% of the Brazilian
+population plays video games. The demographic most actively engaged in gaming
+is men aged between 16 and 34.
+Dopamine release builds loyalty: From another perspective, the rewards system
+plays a key role in audience retention strategies. Small rewards trigger dopamine
+release in the audience without straining the company’s finances, and this constant
+release plays a significant role in the retention process (encouraging the player to
+keep playing).
+Customer loyalty reduces CAC: As betting operators sell commodities, one of the
+most significant costs of any operation lies in customer acquisition (promotion,
+PR, storytelling and brand awareness, relationship building, funnel structuring,
+and guiding the audience towards conversion). Therefore, any initiative with the
+potential to reduce CAC consequently has a major impact on operational
+efficiency.
+Loyalty opens up new business opportunities: Once players are engaged with the
+platform and continue to seek out the next rewards, a range of commercial
+opportunities becomes available. For example: you can charge for shortcuts,
+experiences or features, as games do, or create scenarios where players can
+compete against others (with rewards based on performance and/or referrals).
+Loyalty and clustering are trends: One of the concepts most frequently discussed
+in recent digital business debates is that of ‘dark forests’. Essentially, people
+have been relating to the internet as if they were alone in a dark forest:
+everything feels threatening, the chances of encountering a predator or bot are
+high, and the opportunities for genuine connections are slim. This has been one
+of the driving forces behind the rise of closed communities (Discord, Telegram,
+WhatsApp) at the expense of posts on open platforms. It is also one of the
+justifications for business deals such as the New York Times’ acquisition of The
+Athletic, which paid over US$550 million in 2022 to gain access to a subscriber
+base of 1.2 billion. Thus, the business value of such initiatives also lies in the
+number of loyal users.
+
+This introduction is necessary to make the point that, regardless of the figures involved,
+loyalty programmes are extremely important for strategic reasons. This understanding
+must form the starting point for any analysis of a specific scheme.
+
+Novibet THA – Product Manager
+
+Guilherme Costa – March 2026
+
+______________________________________________________________________
+
+3.2 Analytical framework
+Having established the conceptual foundations for the programme’s justification, an
+analytical framework should have four priorities:
+
+
+
+
+
+
+Activation: Are players discovering and progressing into the programme? How
+much does it cost to promote the programme and attract new players?
+Engagement: Are players advancing through milestones meaningfully? What is
+the average number of stages each of them has completed?
+Revenue generation: Does loyalty drive net-new GGR beyond what the player
+would have generated? How does the GGR of loyalty scheme members compare
+with that of other players? How does it compare when looking solely at casino
+players?
+Retention: Does milestone progression reduce churn? How does the average
+monthly deposit of players in the programme compare with that of other players?
+What is the average stake placed by players in the programme and by other
+players?
+
+Finally, it is essential to take into account operating costs (the number of people involved,
+hours allocated, and tools hired) and the total revenue generated by the programme.
+
+3.3 Perimeter of the analysis
+The period under review spans eight months, but requires an important caveat. The
+programme was launched in January, the first month of the regulated market in Brazil.
+Due to the need for adaptation, this was a period of significant negative impact across all
+market metrics. The Blask Index, for example, fell 28% in January 2025.
+Therefore, even though the analysis covers an eight-month period, it is important to make
+it clear that January’s result is likely to be an outlier.
+For the purposes of analysis, I propose segmenting the audience into four profiles:
+
+
+
+
+
+New players – People who made their first deposit between January and August
+2025
+Established players – People who were already active on the platform before
+January 2025
+Reactivated players – People who had no activity on the platform in the 60 days
+prior to the launch of the programme
+Control group – Matched cohort from pre-programme period (e.g., Aug–Dec
+2024)
+
+3.4 Key issues raised in the areas analysed
+
+
+Activation: Because enrolment is passive (no opt-in required), 100% of casino
+players are technically enrolled. The meaningful activation question is therefore:
+what share of players actually earn enough coins to reach Premium Milestone 1
+(2,000 coins)?
+
+Novibet THA – Product Manager
+
+Guilherme Costa – March 2026
+
+______________________________________________________________________
+ Engagement: The Premium stage structure (milestones at 2,000 / 7,000 / 17,000 /
+42,000 / 92,000 coins) contains a structural risk: the gap between M3 and M4 is
+25,000 coins, which is 2.5x the prior interval (M2/M3 = 10,000 coins). This nonlinearity is expected to cause a pronounced drop-off at M4.
+ Revenue generation: This is the most critical dimension for justifying programme
+cost. The analysis must control for self-selection bias: players who earn more
+coins are inherently more active. A naive comparison (loyalty players vs. nonloyalty players) will overstate the programme's causal effect.
+ Retention: Each Progressive milestone should correlate with measurably lower
+churn. The key hypothesis is that players who have completed a milestone are
+more “anchored” to the platform due to sunk-cost investment in coin
+accumulation and anticipation of the next reward.
+
+3.5 Key proposals to tackle the issues raised
+
+
+
+
+
+
+Activation: Operational and promotional costs (what is the cost of bringing a
+player into the programme, and what is the cost of getting them to accumulate
+their first 2,000 coins?)
+Engagement: Plot milestone completion funnel by monthly cohort. If M3/M4
+drop-off exceeds M2/M3 drop-off by more than 2x, introduce an interim
+milestone at ~28,000/30,000 coins to reduce perceived distance.
+Revenue generation: Compare the GGR trajectory of players who reached each
+milestone vs. a matched cohort of players with similar pre-programme activity
+who did not reach that milestone (control group). This controls for the fact that
+high-activity players self-select into higher milestones.
+Retention: Compare the average GGR generated by players in the programme
+(from M2 onwards) with the average GGR of the control group. Compare the
+NGR of players in the programme with the overall NGR. Compare the LTV of
+players in the programme with the overall LTV.
+
+3.6 Risks to follow
+
+
+
+
+
+
+Acquisition cost
+Drop-off after the each milestone
+Retention cost (communication, promotion, monitoring)
+Reactivation cost (communication, promotion, monitoring)
+Programme cost (is it better than other onboarding platforms, such as bonuses?)
+
+Novibet THA – Product Manager
+
+Guilherme Costa – March 2026
+
+______________________________________________________________________
+
+4. North Star Metric Framework
+The way we evaluate the performance of our products is through the NSM
+framework.
+NSM stands for North Star Metric; we can have multiple metrics to evaluate a
+product, but you need to choose one metric that best reflects whether the product is
+truly growing and delivering value.
+● Propose a NSM for one of the above mentioned products (Offers Page, Sportsbook
+Missions, Casino Loyalty)
+● Explain your rationale and for choosing this metric
+● Identify 3-4 additional, secondary metrics that can either influence the NSM or
+cover another dimension of success for the product
+● Describe the way you can actually use this NSM framework to guide product
+decisions and prioritise initiatives.
+
+Novibet THA – Product Manager
+
+Guilherme Costa – March 2026
+
+______________________________________________________________________
+
+4.1 Rationale for the chosen metric
+The three case studies presented in this document cover two main subjects. The first
+(Offers Page) deals with user acquisition, whilst the other two (Sportsbook Missions and
+Casino Loyalty) focus more on customer retention. The difference is that one of them
+(Casino Loyalty) uses rewards to capture the audience’s attention, whilst the other
+(Sportsbook Missions) is based on the repetition of tasks or challenges.
+Therefore, my first criterion for selection was to identify the type of product in which I
+have the greatest confidence. I truly believe that customer loyalty will be a major driver
+of efficiency in iGaming over the coming years. This is a sector where there is little
+product differentiation, and the relationship between brands and customers is essentially
+transactional (offers, reactivation, bonuses, complaints, issues, rewards). The Brazilian
+market has a huge volume of players, but the average GGR is low compared to countries
+where the industry is more mature. Furthermore, as I pointed out above, the Brazilian
+iGaming market has been built around companies that acquire users at extremely high
+costs. So, any initiative that builds player loyalty and reduces CAC has a massive impact
+on operational efficiency.
+With this in mind, I can use my experience and knowledge of the market as a preliminary
+filter for the figures.
+So, looking more closely at the logic behind Sportsbook Missions, it becomes clear that
+the metrics can also be grouped. Some capture only intent, such as clicks and opt-ins, but
+do not necessarily indicate a business impact. Others, such as the number of missions
+undertaken or the number of missions completed, depend on decisions made by parties
+other than the players (if the platform decides to offer more missions, they will be able to
+hit the target regardless of the conversion rate). Finally, some targets are far removed from
+business impact (audience, number of active players, % of missions completed).
+With this in mind, the metric I have chosen to apply within the NSM methodology is
+weekly transacting mission users (WTMU), which represents the number of unique
+players who entered one or more missions (opt in) and completed one or more missions
+within the specified timeframe (one week). This, of course, takes into account only
+transacting missions (missions with a business impact).
+It is important to note that this is a complex metric, unlike those presented in the financial
+reports and dashboards, and is designed to provide an in-depth insight into the operation
+in question.
+Furthermore, A player who opts in and completes a Mission has engaged with the full
+product cycle. They experienced the incentive, placed qualifying bets, and received a
+reward. This is not a passive impression.
+WTMU captures the players most likely to generate incremental GGR and retain longterm. The mission completion event is the point at which the product has demonstrably
+influenced player behaviour.
+
+Novibet THA – Product Manager
+
+Guilherme Costa – March 2026
+
+______________________________________________________________________
+
+4.2 Secondary Metrics (input metrics)
+These four metrics directly influence WTMU. Each one covers a dimension WTMU alone
+cannot capture:
+
+
+
+
+
+Opt-in Conversion Rate (Completions / Opt-ins): Covers mission difficulty
+calibration
+User Completion Rate (Completing users / Opt-in users): Follows the individual
+player efficiency
+Category Diversity Index (1 - HHI* of mission type share): Measures portfolio
+risk + market alignment
+Private Mission Share (Private missions / Total missions): Understands the
+personalisation depth
+
+* HHI = Herfindahl-Hirschman Index, a standard measure of category concentration. A score of 1.0 indicates complete concentration
+in one category; 0 indicates perfect distribution. Used here as a simple diversity proxy.
+
+4.3 Using the NSN Framework to guide decisions
+I asked the AI (Claude) to draw up a four-step plan for WTMU to follow in the specified
+project. The steps I included in the prompt were:
+Step 1 — Weekly WTMU as the diagnostic trigger
+Step 2 — Prioritise initiatives by expected WTMU impact
+Step 3 — Quarterly OKR structure against WTMU
+Step 4 — A/B Test Governance
+The answers he gave are as follows:
+Step 1 — Weekly WTMU as the diagnostic trigger
+If WTMU declines week-over-week, consult the four secondary metrics to identify the
+cause before making any product change.
+If this input metric declines…
+Opt-in Conversion Rate
+
+The diagnosis is…
+Mission difficulty too high or
+category mismatch
+
+User Completion Rate
+
+Fatigue, UX friction, or mission
+design drift
+Over-reliance
+on
+football
+calendar
+Segmentation abandoned in
+planning
+
+Category Diversity Index
+Private Mission Share drops to
+0
+
+The intervention is…
+Add
+Basketball/Mixed
+missions;
+review
+odds
+thresholds
+Survey non-completers; review
+mission progress UI
+Mandate minimum non-football
+missions per week
+Reinstate private missions for
+≥2 slots per week
+
+Step 2 — Prioritise initiatives by expected WTMU impact
+When competing for product development resources, rank initiatives by their estimated
+WTMU impact, validated by the June data:
+ Mandate category diversity (Basketball/Mixed every week) → est. +30–40%
+WTMU recovery to May levels, based on observed data.
+ Halt User Completion Rate decline (investigate fatigue/difficulty) → est. +10–
+15% WTMU if rate stabilised at April levels.
+
+Novibet THA – Product Manager
+
+Guilherme Costa – March 2026
+
+______________________________________________________________________
+ Reinstate private missions every week → est. +8 pp completion rate uplift,
+translating to ~+5% WTMU.
+ Increase weekly mission volume to 9–12 → est. +10–20% absolute WTMU via
+additional completion opportunities.
+Step 3 — Quarterly OKR structure against WTMU
+Quarter
+Q2 2025 (baseline)
+Q3 2025
+
+WTMU Target
+Establish
+measurement; target:
+~2,000/week
++25% vs Q2 avg
+
+Q4 2025
+
++15% vs Q3 avg
+
+Q1 2026
+
++10% vs Q4 avg
+
+Primary Lever
+Instrument
+WTMU
+tracking; validate data
+pipeline
+Category
+diversity
+mandate;
+private
+missions reinstated
+Mission
+difficulty
+recalibration;
+User
+Completion
+Rate
+recovery
+Always-on
+rolling
+mission
+structure;
+personalisation layer
+
+Owner
+Analytics + Product
+Missions Planning +
+Product
+Product + UX
+
+Product + CRM
+
+Step 4 — A/B Test Governance
+Every product change to Missions should be validated as a randomised controlled
+experiment with WTMU as the primary outcome metric. Minimum requirements: 95%
+confidence threshold; minimum detectable effect of 5% relative lift; minimum 2-week
+test duration (4 weeks for low-volume segments). Secondary metrics serve as guardrails,
+an initiative that improves WTMU but degrades User Completion Rate or BCR beyond
+thresholds should not be shipped.
+
+4.4 Executive assessment
+Taken together, the initial exercise carried out, the metric identified and the framework
+created by AI demonstrate that it is possible to build customer loyalty by focusing on
+delivery, thereby reducing CAC and increasing player LTV. This would also open up the
+possibility for the company to adopt an even more youthful, dynamic and gamified
+approach to communication, creating a direct link with younger audiences (the iGaming
+market is restricted to those aged 18 and over).
+In this regard, it is particularly important to align the company’s OKRs with the project’s
+outcomes to ensure the desired impact during the months of implementation.
+
+
