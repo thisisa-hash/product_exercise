@@ -164,9 +164,112 @@ p2.add_run('The analytical granularity feels genuinely worked through. However, 
 
 doc.add_paragraph('')
 
+# ─── GUILHERME COSTA ───
+doc.add_heading('GUILHERME COSTA', 1)
+
+doc.add_heading('Exercise 1 — Offers Page', 2)
+for b in [
+    'Opened with a Brazil-specific regulatory context (bonus restrictions since market regulation) and used the actual screenshots to identify UX issues — absence of CTAs, offer counters showing 496/1,747 days to expiry (makes FOMO meaningless), no clear hierarchy for featured offers. No other candidate looked at the product this critically.',
+    'KPIs structured into a 5-step sequential funnel (page view → banner click → CTA → register → bet placed) with drop-off hypotheses per step. Separate platform breakdown (Mobile App/Mobile Web/Desktop) shows platform-aware PM thinking.',
+    'Success definition is tiered by timeframe: Short-term weekly (10% click rate, 25% opt-in of clicks, <60% exit), Medium-term monthly (10% offer-to-bet CVR, 12% GGR from offers), Long-term quarterly (multi-offer engagement, bonus cost ratio ≤25%) — most structured success framework of all candidates.',
+    'Additional KPIs include Bonus Cost Ratio, CAC via offers, GGR per offer — commercially grounded.',
+    'Transparently flagged that dashboard figures were produced with AI for illustration purposes — honest and appropriate.',
+]:
+    doc.add_paragraph(b, style='List Bullet')
+
+doc.add_heading('Exercise 2 — Missions', 2)
+for b in [
+    'Full 13-week data used with clean summary table and monthly aggregation. Identified the key structural insight: opt-in rate kept rising in June (16.7% → 17.3%) while completions collapsed — player interest did not drop, only their ability to complete missions did. The sharpest single observation in the entire dataset.',
+    'Connected sport category mix directly to performance with evidence: May best week (May 18: 14 missions, 3F/5B/6 Mixed) vs June collapse (0 Basketball, 0 Mixed). Validated the pattern with April 27 (Football+Tennis only → CR dropped from 36.9% to 31.8%).',
+    'Raised a secondary issue no other candidate spotted: the User Completion Rate (completing users / opt-in users) dropped from 60.7% in April to 26% by late June — and this decline started in May before the June category shift, suggesting mission fatigue or difficulty calibration drift.',
+    'Called out that football is underrepresented at 44.4% of missions despite representing 80%+ of the Brazilian sports betting market — a market-specific insight showing genuine local knowledge.',
+    '"Drop the product" response is the most precise: "Missions does not have a product problem, but a content curation problem." Proposed a controlled A/B experiment (Missions On vs Off for matched cohorts over 6 weeks) as the correct decision-making tool.',
+]:
+    doc.add_paragraph(b, style='List Bullet')
+
+doc.add_heading('Exercise 3 — Loyalty', 2)
+for b in [
+    'Correctly understood no opt-in. Correctly identified Premium (5 milestones) and VIP (7 milestones) structure.',
+    'Opened with Brazilian market context (28M active players, 68.3% men, 51.3% aged 18–40) and connected this demographic to gaming culture and dopamine-driven loyalty mechanics — strategic framing that goes beyond the product itself.',
+    'Spotted a structural design risk: M3→M4 requires 25,000 coins vs M2→M3 requiring 10,000 — a 2.5x jump — and proposed an interim milestone at ~28,000–30,000 coins to reduce drop-off. No other candidate engaged at this level of product design detail.',
+    'Proposed four audience segments: New players, Established players, Reactivated players, and a Control group (Aug–Dec 2024) — and flagged January 2025 results are likely outliers due to market regulation disruption (Blask Index fell 28%). Context-awareness is exceptional.',
+    'Risks section is unique: includes acquisition cost, milestone drop-off, retention cost, reactivation cost, and programme cost vs other onboarding alternatives — treats the loyalty programme as a business investment, not just a product feature.',
+]:
+    doc.add_paragraph(b, style='List Bullet')
+
+doc.add_heading('Exercise 4 — NSM', 2)
+for b in [
+    'Chose Sportsbook Missions — NSM: Weekly Transacting Mission Users (WTMU) — defined as unique players who both opted in AND completed at least one mission in a week. Most precisely defined NSM of all candidates.',
+    'Acknowledged the distinction between metrics that capture intent (opt-ins) vs. platform decisions (number of missions) vs. actual business impact — showed conceptual clarity about what an NSM should measure.',
+    'Secondary metrics include a Category Diversity Index using HHI (Herfindahl-Hirschman Index) as a concentration measure — sophisticated and directly addresses the June collapse root cause.',
+    'NSM framework is the most operationally developed: diagnostic decision table, initiative prioritisation with quantified WTMU impact estimates (+30–40% for category diversity), quarterly OKR structure with targets and owners, and A/B test governance rules (95% confidence, 5% MDE, 2–4 week minimum).',
+]:
+    doc.add_paragraph(b, style='List Bullet')
+
+p = doc.add_paragraph()
+p.add_run('Final call: Hire — #1.  ').bold = True
+p.add_run('Brazilian market context, UX critique of the actual product, the mission fatigue hypothesis, the milestone gap observation in loyalty, and the WTMU definition all demonstrate a PM who genuinely engaged with the material. The transparency about AI use is a signal of good judgement — he used it as a tool, acknowledged it, and the intellectual contribution is clearly his own.')
+
+p2 = doc.add_paragraph()
+p2.add_run('AI signal: Low-Medium (disclosed).  ').bold = True
+p2.add_run('He explicitly flagged AI use twice (dashboard illustrations, NSM framework steps). The analytical thinking and market context are his own. Not a red flag — it is appropriately disclosed.')
+
+doc.add_paragraph('')
+
+# ─── BRUNO DI MAURO ───
+doc.add_heading('BRUNO DI MAURO', 1)
+
+doc.add_heading('Exercise 1 — Offers Page', 2)
+for b in [
+    'Identified the cross-sell opportunity (Sportsbook customers activating casino offers and vice versa) and built two separate illustrative funnels for each direction — a genuinely practical product insight reflecting how offers pages work commercially.',
+    'Proposed separating fixed offers from ad hoc offers as a UX improvement — creating a dedicated fixed-offers area vs a dynamic ad hoc area shows product structural thinking.',
+    'Connected the Offers Page to CRM explicitly — checking offer performance against mailing campaigns, A/B testing offer messaging — demonstrates understanding that this product does not sit in isolation.',
+    'Weak spot: events and KPIs described in a single paragraph without clear structure. No funnel table, no metric targets, no success thresholds defined.',
+    'Success definition is mostly qualitative ("main success is increasing customer retention") — correct direction but not developed into measurable criteria.',
+]:
+    doc.add_paragraph(b, style='List Bullet')
+
+doc.add_heading('Exercise 2 — Missions', 2)
+for b in [
+    'Identified all key pain points correctly: fewer missions in June, sudden stop of Mixed Missions, decrease in Private missions, stable opt-in rate but declining completions — shows he read the data properly.',
+    'Raised a hypothesis that stands out: possibly harder betting requirements to release bet credits, causing opt-ins without completions — a product mechanics hypothesis other candidates missed.',
+    'Asked the right questions for the product team: why did we cut Mixed missions? Why reduce Private? Are we targeting the right events? Why so much Tennis in June? — consultative framing is strong PM behaviour.',
+    'Brazil-specific angle: explicitly mentioned the absence of opening account offers due to legislation, making Missions a must-keep product vs competitors — relevant market context.',
+    'Weak spot: no data tables, no quantification, no trend analysis. Reads as a series of observations and questions rather than a structured data-driven narrative.',
+]:
+    doc.add_paragraph(b, style='List Bullet')
+
+doc.add_heading('Exercise 3 — Loyalty', 2)
+for b in [
+    'Correctly understood no opt-in.',
+    'Proposed a practical two-period comparison (pre vs post-launch) with specific data requests: active casino users, new sign-ups, players per tier, stakes, GGR, top 50 most played games — concrete and actionable.',
+    'Raised a commercially smart idea: multiplying coin points for specific games (x1.5 or x2.0) where the operator has better provider deals, timed to low-traffic hours with on-site push notifications to Sportsbook users — a real commercial operations idea showing practical iGaming experience.',
+    'Weak spot: no analytical framework (4 dimensions, progression funnel, etc.). Reads more as a list of data requests. No mention of Premium vs VIP mechanics being central to the design.',
+]:
+    doc.add_paragraph(b, style='List Bullet')
+
+doc.add_heading('Exercise 4 — NSM', 2)
+for b in [
+    'Chose Sportsbook Missions — NSM: "Increase stakes/slips related to Sportsbook Missions" — the most commercially grounded NSM choice, directly tied to revenue.',
+    'Visual map (New Sign-Ups → Private Missions → Active Users Converted → Missions Completed → Increase stakes/slips) shows a logical product flow.',
+    'Secondary metrics are relevant: new sign-ups, customer retention, weekly private missions, optimised missions (competitive benchmarking) — the last one reflects his operator experience.',
+    'Weak spot: NSM rationale is underdeveloped. "That is the main goal" is stated but not argued. No explanation of why stakes/slips is better than completion rate or opt-in rate as the north star.',
+]:
+    doc.add_paragraph(b, style='List Bullet')
+
+p = doc.add_paragraph()
+p.add_run('Final call: Lean Hire.  ').bold = True
+p.add_run('Bruno brings genuine iGaming operator experience that shows up in practical, commercially grounded observations — the cross-sell funnel, the coin multiplier idea, the CRM-offers connection, the Brazilian legislation context. He thinks like someone who has run these products. However, the submission lacks structure, data engagement, and analytical depth. The ideas are real but underdeveloped. Worth a conversation — the operator instincts are there, the PM framework needs strengthening.')
+
+p2 = doc.add_paragraph()
+p2.add_run('AI signal: Low.  ').bold = True
+p2.add_run('Strong personal voice, practical operator-level ideas, informal and direct writing style that is clearly his own. The Excel file submitted shows genuine data work.')
+
+doc.add_paragraph('')
+
 # ─── SUMMARY TABLE ───
 doc.add_heading('Final Summary', 1)
-table = doc.add_table(rows=4, cols=3)
+table = doc.add_table(rows=6, cols=3)
 table.style = 'Table Grid'
 hdr = table.rows[0].cells
 hdr[0].text = 'Candidate'
@@ -178,9 +281,11 @@ for cell in hdr:
             run.bold = True
 
 for i, (c, f, a) in enumerate([
-    ('Guillermo', 'Hire — #1', 'Low'),
-    ('Gallardo',  'Hire — #2', 'Low-Medium'),
-    ('JERT',      'No Hire',   'High'),
+    ('Guilherme Costa', 'Hire — #1',    'Low-Medium (disclosed)'),
+    ('Guillermo',       'Hire — #2',    'Low'),
+    ('Gallardo',        'Hire — #3',    'Low-Medium'),
+    ('Bruno Di Mauro',  'Lean Hire',    'Low'),
+    ('JERT',            'No Hire',      'High'),
 ]):
     row = table.rows[i+1].cells
     row[0].text = c
